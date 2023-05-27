@@ -52,7 +52,7 @@ https://github.com/Engineer-Aman/Mexico-Toys-Sales-Report-PowerBI/assets/1266858
     4. Profit Per Product = products[Product_Price]-products[Product_Cost]
 
 ## Create Table:-
-'''
+
 Date Table = 
 VAR StartDate=MIN(sales[Date])
 VAR EndDate=MAX(sales[Date])
@@ -67,7 +67,7 @@ ADDCOLUMNS(
 
 )
 RETURN Date_Table
-'''
+
 
 	
 
