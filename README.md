@@ -31,25 +31,25 @@ https://github.com/Engineer-Aman/Mexico-Toys-Sales-Report-PowerBI/assets/1266858
 
 ## Basic Data transformation Check:-
 
-### -	Change Data Types
-### -	Promote Rows To Header If Required
-### -	Replace Null With 0 or NA
-### -	Add Custom Columns If Required
+     -	Change Data Types
+     -	Promote Rows To Header If Required
+     -	Replace Null With 0 or NA
+     -	Add Custom Columns If Required
 
 
 ## Data Modeling :- 
-### 1.	Add Date Master Table 
-### 2.	Create Date Hierarchy
-### 3.	Star Schema
-### 4.	Cardinality (1-*/*-1 )Relationship
+    ### 1.	Add Date Master Table 
+    ### 2.	Create Date Hierarchy
+    ### 3.	Star Schema
+    ### 4.	Cardinality (1-*/*-1 )Relationship
 
 
 
 ## Create Calculated Column:-
- ### 1. Sales = RELATED(products[Product_Price])*sales[Units] 
- ### 2. Cost = RELATED(products[Product_Cost])*sales[Units] 
- ### 3. Profit = RELATED(products[Profit Per Product])*sales[Units]
- ### 4. Profit Per Product = products[Product_Price]-products[Product_Cost]
+    ### 1. Sales = RELATED(products[Product_Price])*sales[Units] 
+    ### 2. Cost = RELATED(products[Product_Cost])*sales[Units] 
+    ### 3. Profit = RELATED(products[Profit Per Product])*sales[Units]
+    ### 4. Profit Per Product = products[Product_Price]-products[Product_Cost]
 
 ## Create Table:-
 Date Table = 
