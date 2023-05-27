@@ -36,6 +36,38 @@ https://github.com/Engineer-Aman/Mexico-Toys-Sales-Report-PowerBI/assets/1266858
 ### -	Replace Null With 0 or NA
 ### -	Add Custom Columns If Required
 
+
+## Data Modeling :- 
+### 1.	Add Date Master Table 
+### 2.	Create Date Hierarchy
+### 3.	Star Schema
+### 4.	Cardinality (1-*/*-1 )Relationship
+
+
+
+## Create Calculated Column:-
+ ## 1. Sales = RELATED(products[Product_Price])*sales[Units] 
+ ## 2. Cost = RELATED(products[Product_Cost])*sales[Units] 
+ ## 3. Profit = RELATED(products[Profit Per Product])*sales[Units]
+ ## 4. Profit Per Product = products[Product_Price]-products[Product_Cost]
+
+## Create Table:-
+Date Table = 
+VAR StartDate=MIN(sales[Date])
+VAR EndDate=MAX(sales[Date])
+VAR Date_Table=
+ADDCOLUMNS(
+     CALENDAR(StartDate,EndDate),
+     "Year",YEAR([Date]),
+     "QuarterNo",QUARTER([Date]),
+     "QuarterName",FORMAT([Date],"\QQ"),
+     "MonthName",FORMAT([Date],"MMM"),
+     "MonthNo",MONTH([Date])
+
+)
+RETURN Date_Table
+
+
 	
 
 
