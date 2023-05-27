@@ -15,8 +15,8 @@ https://github.com/Engineer-Aman/Mexico-Toys-Sales-Report-PowerBI/assets/1266858
 
 
 ## KPI’s(Cards):-
-      ### 1.Sales 
-      ### 2.Coast
+      1.Sales 
+      2.Coast
       
 
 
